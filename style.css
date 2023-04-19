@@ -1,0 +1,202 @@
+
+/*en-tête (titre + réseaux)*/
+header{
+     height: 75px;
+}
+
+
+/*corps de la page*/
+body{
+     background-color: lightgrey;
+     font-family: 'Montserrat' ;
+}
+
+
+/*barre de navigation*/
+nav{
+     width: 100%;
+     background-color: #333;
+}
+
+nav ul{
+     margin: auto;
+     padding: 0px;
+     display: table;
+}
+
+ nav li{
+     float: left;
+     list-style-type: none;
+}
+
+li a{
+     display: block;
+     color: white;
+     background-color: #333;
+     padding: 20px 50px;
+     text-transform: uppercase;
+     text-decoration: none;
+}
+
+.hover_li:hover{
+     background-color: rgba(255,255,255,0.2);
+}
+
+.active{
+     background-color:#4CAF50;
+     color:black;
+}
+
+
+
+/*fin de page*/
+footer{
+     text-align: center;
+     bottom: 0px;
+     margin-top: 100px;
+     margin-bottom: 50px;
+     color:black;
+     clear: left;
+}
+
+
+/*image des réseaux sociaux*/
+.social{
+     position: absolute;
+     top:33px;
+     left: 20px;
+     width: 400px;
+     overflow: hidden;
+     margin: 0px;
+}
+
+.image{
+     margin-right: 20px;
+}
+
+/*titre de la page*/
+.titre_page{
+     display:block;
+     text-decoration: none;
+     text-transform: none;
+     text-align: center;
+     color :black;
+     font-size: 40px;
+     font-style:  bolder;
+}
+
+
+/*Contenu de la page index*/
+
+/*aperçu galerie*/
+
+.div_aperçu{
+     z-index: 1;
+     position: relative;
+}
+
+.image_aperçu{
+     position: relative;
+     width: 100%;
+     margin-top: 20px;
+}
+
+.text_sur_image{
+     position: absolute;
+     display: block;
+     padding : 20px;
+     bottom: -21px;
+     width: 97.35%;
+     background-color: rgba(51,51,51,0.75);
+     color: white;
+     font-size: 25px;
+     text-decoration: none;
+}
+
+.bouton_sur_image{
+     position: absolute;
+     padding: 20px 30px;
+     margin-top: -20px;
+     right: 0;
+     text-decoration: none;
+     color:white;
+}
+.bouton_sur_image:hover{
+     background-color: #4CAF50;
+     color:black;
+}
+
+.profil{
+     display: block;
+     font-size: 35px;
+     color:white;
+     margin-top: 50px;
+     padding: 20px;
+     background-color: #333;
+     text-align: center;
+     background-size: 100% ;
+}
+
+/*bouton de retour en haut de page*/
+.top_page_c{
+     z-index: 1;
+     position: fixed;
+     right: 5px;
+     bottom: 5px;
+     width: 42px;
+     height: 42px;
+     border-radius: 21px;
+     box-shadow: 1px 1px 7px black;
+}
+
+
+.content_left{
+     width: 85.2%;
+     float: left;
+     margin-bottom: 20px;
+     margin-right: 20px;
+}
+
+.text_corps{
+     margin-left: 30px;
+     text-align: justify;
+}
+
+.rect_left{
+     background-color: #4CAF50;
+     width: 200px;
+     height: 500px;
+     float: left;
+     margin-right: 20px;
+}
+
+.rect_right{
+     background-color: #4CAF50;
+     float: right;
+     width: 200px;
+     height: 500px;
+}
+
+
+.table_galerie{
+     text-align: center;
+     margin: auto;
+}
+
+.img_galerie{
+     width: 300px;
+     height: 300px;
+     margin: 20px;
+}
+
+
+/*effet trop stylé quand on survol les image de la galerie*/
+.table_galerie img{
+     filter: sepia(1);
+     transition: all 0.3s ease-in-out;
+}
+
+.table_galerie img:hover{
+     filter: sepia(0);
+     transform: scale(1.05);
+}
